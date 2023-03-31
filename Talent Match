@@ -17,3 +17,31 @@ In the future, Talent Match could be expanded to include additional data sources
 
 Acknowledgments:
 The inspiration for Talent Match came from the increasing demand for AI solutions in the HR industry. The NLP and machine learning techniques used in Talent Match were inspired by OpenAI's GPT-3 language model and Google's AutoML platform. The demo will be implemented using open source code from GitHub, and credit will be given to the creators.
+
+code for shortlisting candidates based on their qualifications and experience:
+This code defines a list of candidates with their qualifications and experience, and specifies the minimum qualifications and experience required for the job. It then loops through the candidates and checks if they meet the minimum requirements, and adds them to a new list if they do. Finally, it prints the names of the shortlisted candidates. Note that this code is just an example and can be adapted to different use cases and requirements.
+
+# Define a list of candidates with their qualifications and experience
+candidates = [
+    {'name': 'John', 'qualification': 'Bachelor of Science', 'experience': 3},
+    {'name': 'Jane', 'qualification': 'Master of Science', 'experience': 5},
+    {'name': 'Bob', 'qualification': 'PhD', 'experience': 2},
+    {'name': 'Alice', 'qualification': 'Bachelor of Science', 'experience': 4},
+]
+
+# Define the minimum qualifications and experience required for the job
+min_qualification = 'Bachelor of Science'
+min_experience = 3
+
+# Initialize an empty list to store the shortlisted candidates
+shortlisted_candidates = []
+
+# Loop through the candidates and check if they meet the minimum qualifications and experience
+for candidate in candidates:
+    if candidate['qualification'] >= min_qualification and candidate['experience'] >= min_experience:
+        shortlisted_candidates.append(candidate)
+
+# Print the shortlisted candidates
+print('Shortlisted candidates:')
+for candidate in shortlisted_candidates:
+    print(candidate['name'])
